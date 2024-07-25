@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: ec2 web app 
+Resources:
+        webappec2:
+            Type: "AWS::EC2::Instance"
+            Properties: 
+                ImageId: "ami-06708ae97ebafbaa9" 
+                InstanceType: t2.micro
+                KeyName: osakaanup
+                AvailabilityZone: ap-northeast-3a
+                DisableApiTermination: True 
+                Tags: 
+                      - Key: "Name"
+                        Value: "Webserver"
