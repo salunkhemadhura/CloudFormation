@@ -4,10 +4,9 @@ Resources:
         webappec2:
             Type: "AWS::EC2::Instance"
             Properties: 
-                ImageId: "ami-06708ae97ebafbaa9" 
+                ImageId: "ami-0b8fd93c15b2c81ce" 
                 InstanceType: t2.micro
-                KeyName: osakaanup
-                AvailabilityZone: ap-northeast-3a
+                KeyName: "stockkey"
                 DisableApiTermination: True 
                 Tags: 
                       - Key: "Name"
