@@ -4,9 +4,9 @@ Resources:
         iamuser:
                Type: AWS::IAM::User
                Properties: 
-                UserName: AnupCFTUser
+                UserName: RamCFTUser
                 ManagedPolicyArns:
                    - arn:aws:iam::aws:policy/AdministratorAccess
                 Tags: 
                       - Key: "Name"
-                        Value: "AnupCFTUser"
+                        Value: "RamCFTUser"
