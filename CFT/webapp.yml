@@ -6,7 +6,8 @@ Resources:
             Properties: 
                 ImageId: "ami-0b8fd93c15b2c81ce" 
                 InstanceType: t2.micro
-                KeyName: "stockkey"
+                KeyName: stockkey
+                AvailabilityZone: eu-north-1a
                 DisableApiTermination: True 
                 Tags: 
                       - Key: "Name"
