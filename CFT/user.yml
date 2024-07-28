@@ -1,0 +1,12 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: iam user 
+Resources:
+        iamuser:
+               Type: AWS::IAM::User
+               Properties: 
+                UserName: AnupCFTUser
+                ManagedPolicyArns:
+                   - arn:aws:iam::aws:policy/AdministratorAccess
+                Tags: 
+                      - Key: "Name"
+                        Value: "AnupCFTUser"
